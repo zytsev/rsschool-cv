@@ -19,3 +19,15 @@ function multiply(a, b){
   a * b
 }
 ~~~
+## Education
+* Ural State Legal Academy, Ekaterinburg
+  - Law
+* Ural State Economic University, Ekaterinburg
+  - Finace
+## Experience
+- Small own business - furniture, since 2013
+- I do not have experience in JS and Frontend.
+## Languages
+- English learning
+- Portugese learning
+- Russian
