@@ -6,3 +6,16 @@
 - e-mail: zaes2000@mail.ru
 - GitHub: zytsev
 - Discord: evgeny1734
+## Summary
+My education and experience have nothing to do with information technology and programming. However, I want to change my life and learn a new profession JS frontend developer. My first project [CV](https://github.com/zytsev/rsschool-cv.git).
+## Skils
+- Git
+- CSS
+- Markdown
+- VS Code
+## Code examples
+~~~
+function multiply(a, b){
+  a * b
+}
+~~~
