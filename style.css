@@ -8,8 +8,8 @@
     min-height: ;
     margin: 0; padding: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: ;
+    flex-direction: column;
+    justify-content: space-between;
   }
   * {
     box-sizing: border-box;
