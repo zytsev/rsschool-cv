@@ -3,19 +3,19 @@
     src: url(assets/fonts/Raleway-Regular.ttf);
 }
 
-body {
+.body {
     font-family: "Raleway";
-    min-height: 100vh;
+    min-height: ;
     margin: 0; padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: ;
   }
   * {
     box-sizing: border-box;
   }
   .body {
-    border: 1px solid grey;
+    
     }
   .container {
     max-width: 1440px;
@@ -37,4 +37,8 @@ body {
     font-size: 30px;
     font-weight: 300;
     color: brown;
+  }
+  .section-main {
+    border: 2px rgb(40, 64, 201);
+    background-color: aqua;
   }
