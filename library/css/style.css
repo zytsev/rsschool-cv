@@ -1,3 +1,5 @@
+
+
 /* forum-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -25,4 +27,87 @@
   * {
     box-sizing: border-box;
   }
- 
+  body {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+  }
+  /* Style header start*/
+  .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+  }
+  .header-name {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+  }
+  .header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header-nav {
+    margin-left: 454px;
+  }
+  .header-nav-list-item {
+    margin-right: 30px;
+  }
+  .header-nav-list :last-child {
+    margin-right: 0;
+  }
+  .header-nav-list-link {
+    color: #FFF;
+    line-height: 50px;
+    text-decoration: none;
+  }
+  .header {
+    background-color: #0C0C0E;
+    height: 90px;
+  }
+  /*Style header end*/
+
+/*Style overlay start*/
+.welcome {
+  height: 600px;
+  background: url(/img/Welcome.jpg) center;
+  background-size: cover;
+}
+.welcome-bg {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 220px;
+  margin-left: 0;
+  margin-top: 220px;
+  background-color: #0C0C0E;
+}
+.welcome-text {
+  width: 520px;
+  height: 160px;
+  color: #FFF;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-top: 5px;
+ }
+/*Style overlay end*/
