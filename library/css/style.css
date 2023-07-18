@@ -179,5 +179,28 @@ text-align: center;
   font-weight: 700;
   margin-top: 40px;
 }
+.favorites-form {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.favorites-form-season {
+  margin-right: 90px;
+  position: relative;
+  
+}
+.favorites-form-label {
+  cursor: pointer;
+  padding: 5px;
+}
+.favorites-form-input {
+  border: 5px #BB945F;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  
+}
+
+
 
 /*Style favorites end*/
