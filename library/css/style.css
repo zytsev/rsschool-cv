@@ -183,24 +183,27 @@ text-align: center;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-}
-.favorites-form-season {
-  margin-right: 90px;
-  position: relative;
-  
+  margin-left: -5px;
 }
 .favorites-form-label {
   cursor: pointer;
   padding: 5px;
+  margin-right: 85px;
 }
 .favorites-form-input {
-  border: 5px #BB945F;
   width: 17px;
   height: 17px;
+  margin-right: 15px;
+  vertical-align: middle;
   cursor: pointer;
-  
 }
-
+.favorites-form-span {
+  padding: 0;
+}
+.favorites-form-input:checked + .favorites-form-span {
+  font-weight: 700;
+}
+ 
 
 
 /*Style favorites end*/

@@ -81,28 +81,25 @@
                 <hr class="line">
                 <p class="Pick">Pick favorites of season</p>
                 <form action="handler.js" class="favorites-form">
-                    <div class="favorites-form-season">
-                        <input type="radio" class="favorites-form-input" name="season" value="Winter" id="Winter" checked>
-                        <label for="Winter" class="favorites-form-label">Winter</label>
-                    </div>
-                    <div class="favorites-form-season">
-                        <input type="radio" class="favorites-form-input" name="season" value="Spring" id="Spring">
-                        <label for="Spring" class="favorites-form-label">Spring</label>
-                    </div>
-                    <div class="favorites-form-season">
-                        <input type="radio" class="favorites-form-input" name="season" value="Summer" id="Summer">
-                        <label for="Summer" class="favorites-form-label">Summer</label>
-                    </div>
-                    <div class="favorites-form-season">
-                        <input type="radio" class="favorites-form-input" name="season" value="Autumn" id="Autumn">
-                        <label for="Autumn" class="favorites-form-label">Autumn</label>
-                    </div>
+                    <label class="favorites-form-label">
+                        <input type="radio" class="favorites-form-input" name="season" value="Winter" checked>
+                         <span class="favorites-form-span"> Winter </span>
+                    </label>
+                    <label class="favorites-form-label">
+                        <input type="radio" class="favorites-form-input" name="season" value="Spring">
+                        <span class="favorites-form-span"> Spring </span>
+                    </label>
+                    <label class="favorites-form-label">
+                        <input type="radio" class="favorites-form-input" name="season" value="Summer">
+                        <span class="favorites-form-span"> Summer </span>
+                    </label>
+                    <label class="favorites-form-label">
+                        <input type="radio" class="favorites-form-input" name="season" value="Autumn">
+                        <span class="favorites-form-span"> Autumn </span>
+                    </label> 
                 </form>
-            
-
             </div>
         </section>
     </main>
-    
 </body>
 </html>
