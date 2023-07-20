@@ -203,20 +203,34 @@ text-align: center;
 .favorites-form-input:checked + .favorites-form-span {
   font-weight: 700;
 }
+.favorites-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .favorites-cards {
-  position: relative;
+position: relative;
 width: 590px;
 height: 555px;
-border: 1px solid #0C0C0E;
+border-left: 1px solid #0C0C0E;
+border-bottom: 1px solid #0C0C0E;
 margin-top: 40px;
 }
+.border-top {
+  position: absolute;
+  width: 20px;
+  height: 554px;
+  border-top: 1px solid #0C0C0E;
+}
 .favorites-cards-in {
-position: absolute;
+position: ;
 top: 0;
-  width: 530px;
+width: 530px;
 height: 555px;
 border-right: 1px solid #0C0C0E;
+border-top: 1px solid #0C0C0E;
 margin-left: 20px;
+
 }
 .card {
   width: ;
@@ -251,17 +265,19 @@ letter-spacing: 2px;
 text-transform: capitalize;
 }
 .description-book {
-  width: 355px;
-  height: 320px;
-  font-size: 15px;
+width: 355px;
+height: 320px;
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 40px; /* 266.667% */
 letter-spacing: 2px;
 text-transform: capitalize;
+margin-top: 20px;
 }
 .favorites-cards-button {
-margin-top: 15px;
+position: relative;
+top: 11px;
 width: 75px;
 height: 30px;
 font-size: 10px;
@@ -271,13 +287,37 @@ line-height: normal;
 letter-spacing: 1px;
 padding: 0;
 }
-.book-img {
+.book-img-book {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 200px;
   height: 300px;
   background: url(../img/books/book.jpg), lightgray 50% / cover no-repeat;
+}
+.book-img-cackle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/cackle.jpg), lightgray 50% / cover no-repeat;
+}
+.book-img-dante {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/dante.jpg), lightgray 50% / cover no-repeat;
+}
+.book-img-queen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/queen.jpg), lightgray 50% / cover no-repeat;
 }
  /*Style favorites end*/
 
