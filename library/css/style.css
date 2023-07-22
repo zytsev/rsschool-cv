@@ -196,6 +196,7 @@ text-align: center;
   margin-right: 15px;
   vertical-align: middle;
   cursor: pointer;
+  accent-color: black;
 }
 .favorites-form-span {
   padding: 0;
@@ -223,7 +224,6 @@ margin-top: 40px;
   border-top: 1px solid #0C0C0E;
 }
 .favorites-cards-in {
-position: ;
 top: 0;
 width: 530px;
 height: 555px;
@@ -233,7 +233,6 @@ margin-left: 20px;
 
 }
 .card {
-  width: ;
   height: 40px;
   margin-top: 15px;
   font-family: "Forum";
@@ -321,3 +320,73 @@ padding: 0;
 }
  /*Style favorites end*/
 
+/*Style Coffee-shop start*/
+#coffee-shop {
+  margin-top: 60px;
+}
+.offee-shop-text-about {
+  max-width: 1400px;
+  height: 120px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-coffee-header {
+color: #BB945F;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+text-align: left;
+margin-top: 40px;
+}
+.line-menu {
+  width: 100px;
+  height: 1px;
+  text-align: right;
+  background: #BB945F;
+  margin-left: 60px;
+  margin-right: 60px;
+  
+}
+.price {
+  font-family: "Forum";
+}
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 438px;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.dish {
+  margin-right: auto;
+}
+.menu-cooffe {
+  margin-top: 40px;
+}
+.menu-deserts {
+  margin-top: 40px;
+}
+.dish-deserts {
+  margin-left: auto;
+}
+.menu-deserts-header {
+text-align: end;
+color: #BB945F;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+margin-top: 40px;
+}
+/*Style Coffee-shop end*/
