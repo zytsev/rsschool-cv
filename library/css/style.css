@@ -1,0 +1,427 @@
+
+
+/* forum-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/forum-v16-latin-regular.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/inter-v12-latin-regular.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/inter-v12-latin-700.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    width: 1440px;
+    margin: 0 auto;
+  }
+  /* Style header start*/
+  .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+  }
+  .header-name {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+  }
+  .header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header-nav {
+    margin-left: 454px;
+  }
+  .header-nav-list-item {
+    margin-right: 30px;
+  }
+  .header-nav-list :last-child {
+    margin-right: 0;
+  }
+  .header-nav-list-link {
+    color: #FFF;
+    line-height: 50px;
+    text-decoration: none;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #0C0C0E;
+    height: 90px;
+  }
+  /*Style header end*/
+
+/*Style Welcome start*/
+.welcome {
+  position: relative;
+  height: 600px;
+  background: url(/img/Welcome.jpg) center;
+  background-size: cover;
+}
+.welcome-bg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 220px;
+  margin-left: 0;
+  margin-top: 220px;
+  background-color: #0C0C0E;
+}
+.welcome-text {
+  width: 520px;
+  height: 160px;
+  color: #FFF;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-top: 5px;
+ }
+/*Style Welcome end*/
+
+/*Style About start*/
+.section-title {
+  color: #0C0C0E;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+margin: 20px auto;
+text-align: center;
+}
+.line {
+  width: 50px;
+  background-color: #0C0C0E;
+  height: 1px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.text-about {
+  line-height: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.carousel {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carousel-wrapper {
+  width: 26px;
+  height: 26px;
+  cursor:pointer;
+}
+.carousel-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #0C0C0E;
+}
+#colorbrown {
+  background-color: #BB945F;
+}
+
+/*Style About end*/
+
+/*Style favorites start*/
+.Pick {
+  font-weight: 700;
+  margin-top: 40px;
+}
+.favorites-form {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+}
+.favorites-form-label {
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 85px;
+}
+.favorites-form-input {
+  width: 17px;
+  height: 17px;
+  margin-right: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  accent-color: black;
+}
+.favorites-form-span {
+  padding: 0;
+}
+.favorites-form-input:checked + .favorites-form-span {
+  font-weight: 700;
+}
+.favorites-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.favorites-cards {
+position: relative;
+width: 590px;
+height: 555px;
+border-left: 1px solid #0C0C0E;
+border-bottom: 1px solid #0C0C0E;
+margin-top: 40px;
+}
+.border-top {
+  position: absolute;
+  width: 20px;
+  height: 554px;
+  border-top: 1px solid #0C0C0E;
+}
+.favorites-cards-in {
+top: 0;
+width: 530px;
+height: 555px;
+border-right: 1px solid #0C0C0E;
+border-top: 1px solid #0C0C0E;
+margin-left: 20px;
+
+}
+.card {
+  height: 40px;
+  margin-top: 15px;
+  font-family: "Forum";
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.card-line {
+  width: 60px;
+  background-color: #0C0C0E;
+  height: 1px;
+  margin: 0;
+}
+.book-name {
+margin-top: 20px;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 266.667% */
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.book-author {
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+.description-book {
+width: 355px;
+height: 320px;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 266.667% */
+letter-spacing: 2px;
+text-transform: capitalize;
+margin-top: 20px;
+}
+.favorites-cards-button {
+position: relative;
+top: 11px;
+width: 75px;
+height: 30px;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+padding: 0;
+}
+.book-img-book {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/book.jpg), lightgray 50% / cover no-repeat;
+}
+.book-img-cackle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/cackle.jpg), lightgray 50% / cover no-repeat;
+}
+.book-img-dante {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/dante.jpg), lightgray 50% / cover no-repeat;
+}
+.book-img-queen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background: url(../img/books/queen.jpg), lightgray 50% / cover no-repeat;
+}
+ /*Style favorites end*/
+
+/*Style Coffee-shop start*/
+#coffee-shop {
+  margin-top: 60px;
+}
+.offee-shop-text-about {
+  max-width: 1400px;
+  height: 120px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.menu-coffee-header {
+color: #BB945F;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+text-align: left;
+margin-top: 40px;
+}
+.line-menu {
+  width: 100px;
+  height: 1px;
+  text-align: right;
+  background: #BB945F;
+  margin-left: 60px;
+  margin-right: 60px;
+  
+}
+.price {
+  font-family: "Forum";
+}
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 438px;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.dish {
+  margin-right: auto;
+}
+.menu-cooffe {
+  margin-top: 40px;
+}
+.menu-deserts {
+  margin-top: 40px;
+}
+.dish-deserts {
+  margin-left: auto;
+}
+.menu-deserts-header {
+text-align: end;
+color: #BB945F;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+margin-top: 40px;
+}
+/*Style Coffee-shop end*/
+
+/*Style contacts start*/
+.contacts {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+.contacts-list {
+
+}
+.contacts-list-header {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+.contacts-list-item {
+  margin-top: 20px;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+strong {
+  font-weight: 700;
+}
+.map {
+margin-top: 40px;
+width: 696px;
+height: 414px;
+background: url(../img/Rectangle4.png), lightgray 50% / cover no-repeat;
+
+}
+/*Style contacts end*/
