@@ -429,7 +429,9 @@ background: url(../img/Rectangle4.png), lightgray 50% / cover no-repeat;
 
 /*Style Digital card start*/
 .digital-card {
-
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 .find-card {
 
@@ -501,5 +503,49 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1px;
 margin-top: 20px;
+}
+.get-card {
+  width: auto;
+  height: 253px;
+  margin-top: 40px;
+}
+.get-card-header {
+  color: #000;
+text-align: right;
+font-family: Forum;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+
+}
+.get-card-info {
+color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 0.4px;
+margin-top: 35px;
+}
+.get-card-form {
+  text-align: right;
+  margin-top: 35px;
+}
+.get-card-button {
+width: 75px;
+height: 30px;
+color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+margin-left: 20px;
 }
 /*Style Digital card end*/
