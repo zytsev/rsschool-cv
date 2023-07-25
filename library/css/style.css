@@ -285,6 +285,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1px;
 padding: 0;
+background-color: #FFF;
 }
 .book-img-book {
   position: absolute;
@@ -503,6 +504,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1px;
 margin-top: 20px;
+background-color: #FFF;
 }
 .get-card {
   width: auto;
@@ -547,5 +549,62 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1px;
 margin-left: 20px;
+background-color: #FFF;
 }
 /*Style Digital card end*/
+
+/*Style Footer start*/
+.footer {
+height: 250px;
+background-color: #0C0C0E;
+margin-top: 41px;
+padding-top: 10px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-container-text {
+  color: #FFF;
+  height: 40px;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+
+text-align: right;
+}
+#left {
+  text-align: left;
+}
+.footer-socialicons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.footer-socialicons li {
+  margin-right: 15px;
+}
+.line-footer {
+  background-color: #FFF;
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+.footer-container-text-end {
+  color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+}
+
+/*Style Footer end*/
