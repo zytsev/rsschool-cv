@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 400;
     color: black;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
   }
   /* Style header start*/
@@ -90,6 +90,10 @@
   height: 600px;
   background: url(/img/Welcome.jpg) center;
   background-size: cover;
+  }
+.overlay {
+  height: 300px;
+  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
 }
 .welcome-bg {
   position: absolute;
@@ -171,7 +175,6 @@ text-align: center;
 #colorbrown {
   background-color: #BB945F;
 }
-
 /*Style About end*/
 
 /*Style favorites start*/
@@ -230,7 +233,6 @@ height: 555px;
 border-right: 1px solid #0C0C0E;
 border-top: 1px solid #0C0C0E;
 margin-left: 20px;
-
 }
 .card {
   height: 40px;
@@ -242,7 +244,7 @@ margin-left: 20px;
 }
 .card-line {
   width: 60px;
-  background-color: #0C0C0E;
+  background-color:#BB945F;
   height: 1px;
   margin: 0;
 }
@@ -274,6 +276,11 @@ letter-spacing: 2px;
 text-transform: capitalize;
 margin-top: 20px;
 }
+#button_own {
+  color: #BB945F;
+  border-color: #BB945F;
+  pointer-events: none;
+}
 .favorites-cards-button {
 position: relative;
 top: 11px;
@@ -286,6 +293,10 @@ line-height: normal;
 letter-spacing: 1px;
 padding: 0;
 background-color: #FFF;
+transition: 0.5s;
+}
+.favorites-cards-button:hover {
+  background-color: #BB945F;
 }
 .book-img-book {
   position: absolute;
@@ -322,7 +333,7 @@ background-color: #FFF;
  /*Style favorites end*/
 
 /*Style Coffee-shop start*/
-#coffee-shop {
+#Coffee-shop {
   margin-top: 60px;
 }
 .offee-shop-text-about {
@@ -401,9 +412,6 @@ justify-content: space-between;
 margin-bottom: 60px;
 
 }
-.contacts-list {
-
-}
 .contacts-list-header {
   font-weight: 700;
   text-transform: capitalize;
@@ -416,15 +424,20 @@ margin-bottom: 60px;
   text-transform: capitalize;
   line-height: 40px;
 }
-strong {
+.contacts-list-item a {
+  text-decoration: none;
+  color: #000;
+}
+#mailto  {
   font-weight: 700;
+  text-decoration-line: none;
+  color: #000;
 }
 .map {
 margin-top: 40px;
 width: 696px;
 height: 414px;
 background: url(../img/Rectangle4.png), lightgray 50% / cover no-repeat;
-
 }
 /*Style contacts end*/
 
@@ -434,14 +447,10 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
-.find-card {
-
-}
 .find-card-header {
 font-size: 30px;
 margin-top: 40px;
 margin-left: 138px;
-  
 }
 .find-card-form {
 width: 600px;
@@ -505,6 +514,10 @@ line-height: normal;
 letter-spacing: 1px;
 margin-top: 20px;
 background-color: #FFF;
+transition: 0.5s;
+}
+.find-card-submit:hover {
+  background-color: #BB945F;
 }
 .get-card {
   width: auto;
@@ -520,7 +533,6 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.6px;
-
 }
 .get-card-info {
 color: #000;
@@ -550,6 +562,10 @@ line-height: normal;
 letter-spacing: 1px;
 margin-left: 20px;
 background-color: #FFF;
+transition: 0.5s;
+}
+.get-card-button:hover {
+  background-color: #BB945F;
 }
 /*Style Digital card end*/
 
@@ -575,8 +591,11 @@ font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 20px; 
-
 text-align: right;
+}
+.footer-container-text a {
+  text-decoration-line: none;
+  color: #FFF;
 }
 #left {
   text-align: left;
@@ -606,5 +625,8 @@ font-weight: 400;
 line-height: 20px; /* 100% */
 letter-spacing: 2px;
 }
-
+.footer-container-text-end a {
+  text-decoration: none;
+  color: #FFF;
+}
 /*Style Footer end*/
