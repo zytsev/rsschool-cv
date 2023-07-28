@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="icon" href="./img/favicon-16x16.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -23,19 +24,19 @@
                             <a href="#Favorites" class="header-nav-list-link">Favorites</a>
                         </li>
                         <li class="header-nav-list-item">
-                            <a href="#Coffee shop" class="header-nav-list-link">Coffee shop</a>
+                            <a href="#Coffee-shop" class="header-nav-list-link">Coffee shop</a>
                         </li>
                         <li class="header-nav-list-item">
                             <a href="#Contacts" class="header-nav-list-link">Contacts</a>
                         </li>
                         <li class="header-nav-list-item">
-                            <a href="#Library Card" class="header-nav-list-link">Library Card</a>
+                            <a href="#Library-Card" class="header-nav-list-link">Library Card</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header-icon">
                     <a href="/" class="heder-icon-link">
-                        <img src="./img/icon_profile.png" alt="icon" class="header-icon-png">
+                        <img src="./img/icon_profile.svg" alt="icon" class="header-icon-png">
                     </a>    
                 </div>
             </div>       
@@ -43,14 +44,16 @@
     </header>
     <main class="main">
         <section class="welcome">
-            <div class="welcome-bg">
-                <p class="welcome-text">
-                    Welcome <br>to the Brooklyn <br>Library
-                </p>
+            <div class="overlay">
+                <div class="welcome-bg">
+                    <h2 class="welcome-text">
+                        Welcome <br>to the Brooklyn <br>Library
+                    </h2>
+                </div>
             </div>
         </section>
         <section class="about">
-            <h1 id="About" class="section-title">About</h1>
+            <h2 id="About" class="section-title">About</h2>
             <hr class="line">
             <p class="text-about">
                 The Brooklyn Library is a free workspace, 
@@ -58,9 +61,9 @@
             </p>
             <div class="wrapper">
                 <div class="about-wrapper">
-                    <img src="./img/image 1.jpg" alt="img1" class="about-img1">
-                    <img src="./img/image 2.jpg" alt="img2" class="about-img2">
-                    <img src="./img/image 3.jpg" alt="img3" class="about-img3">
+                    <img src="./img/image1.jpg" alt="img1" class="about-img1">
+                    <img src="./img/image2.jpg" alt="img2" class="about-img2">
+                    <img src="./img/image3.jpg" alt="img3" class="about-img3">
                 </div>
             </div>
             <div class="carousel">
@@ -158,7 +161,7 @@
                                 A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.       
                             </p>
                             <form action="handler-book.js">
-                                <button type="submit" class="favorites-cards-button">Buy</button>
+                                <button id="button_own" type="submit" class="favorites-cards-button" disabled>Own</button>
                             </form>
                         </div>
                         <div class="book-img-queen"></div>
@@ -167,7 +170,7 @@
             </div>
         </section> 
         <section class="wrapper">
-            <h1 id="coffee-shop" class="section-title">Coffee shop</h1>
+            <h2 id="Coffee-shop" class="section-title">Coffee shop</h2>
             <hr class="line">
             <p class="text-about">
                 In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation.<br> 
@@ -239,27 +242,74 @@
                         <hr class="line-menu">
                         <p class="price">$14</p>
                     </div>
-
                 </div>
             </div>
         </section>
         <section class="wrapper">
-            <h1 class="section-title">Our Contacts</h1>
+            <h2 id="Contacts" class="section-title">Our Contacts</h2>
             <hr class="line">
             <div class="contacts">
                 <div class="contacts-list">
                     <h3 class="contacts-list-header">For all Library inquiries:</h3>
-                    <p class="contacts-list-item">Please call (617) 730-2370</p>
-                    <p class="contacts-list-item">For TTY service, please call (617) 730-2370</p>
-                    <p class="contacts-list-item">Putterham Library: (617) 730-2385</p>
+                    <p class="contacts-list-item">Please call <a href="tel:+1(617)730-2370">(617)730-2370</a></p> 
+                    <p class="contacts-list-item">For TTY service, please call <a href="tel:+1(617)730-2370">(617)730-2370</a></p>
+                    <p class="contacts-list-item">Putterham Library: <a href="tel:+1(617)730-2385">(617)730-2385</a></p>
                     <p class="contacts-list-header">Senior Staff</p>
-                    <p>Library Director: <strong>Amanda Hirst</strong></p>
+                    <p>Library Director: <a href="mailto:AmandaHirst@gmail.com" id="mailto">Amanda Hirst</a></p>
                 </div>
                 <div class="map"></div>
             </div>
-
         </section>
-
+        <section class="wrapper">
+            <h2 id="Library-Card" class="section-title">Digital Library Cards</h2>
+            <hr class="line">
+            <div class="digital-card">
+                <div class="find-card">
+                    <h3 class="find-card-header">Find your Library card</h3>
+                    <form action="findcard.js" class="find-card-form">
+                        <fieldset class="find-card-conteiner">
+                            <div class="find-card-inputs">
+                                <p class="find-card-inputs-name">Brooklyn Public Library</p>
+                                <input type="text" class="find-card-input" name="redersname" placeholder="Reader's name ">
+                                <input type="number" class="find-card-input" name="cardnumber" placeholder="Card number">
+                            </div>
+                            <button class="find-card-submit">Check the card</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="get-card">
+                    <h3 class="get-card-header">Get a reader card</h3>
+                    <p class="get-card-info">You will be able to see a reader card after <br> logging into account or you can register a new <br> account</p>
+                    <form action="getcard.js" class="get-card-form">
+                        <button class="get-card-button">Sign Up</button>
+                        <button class="get-card-button">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-container">
+                <p id="left" class="footer-container-text"> <a href="https://goo.gl/maps/mNSrLCABbWyvDFav8"> 286 Cadman Plaza, New York,</a> <br> NY 11238, United States</p>
+                <p class="footer-container-text">Mon - Fri <br> 08:00 am - 07:00 pm</p>
+            </div>
+            <div class="footer-container">
+                <ul class="footer-socialicons">
+                    <li><a href="http://www.twitter.com"><img src="./img/u_twitter-alt.svg" alt="twitter"></a></li>
+                    <li><a href="http://www.instagram.com"><img src="./img/u_instagram.svg" alt="instagram"></a></li>
+                    <li><a href="http://www.facebook.com"><img src="./img/u_facebook-f.svg" alt="facebook"></a></li>
+                </ul>
+                <p class="footer-container-text">Sat - Sun <br> 10:00 am - 06:00 pm</p>
+            </div>
+            <hr class="line-footer">
+            <div class="footer-container">
+               <p class="footer-container-text-end">2023</p> 
+               <p class="footer-container-text-end"><a href=" https://rs.school/js-stage0/ ">The Rolling Scopes School</a></p>
+               <p class="footer-container-text-end"> <a href="http://github.com/Zytsev">Zytsev</a></p>
+            </div>      
+        </div>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
